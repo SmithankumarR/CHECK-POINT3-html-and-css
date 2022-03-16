@@ -127,7 +127,7 @@ table {
   --primary: #022d5b;
   --secondary: #ffffff;
   --bg2: #F7F9FE;
-  --heading: #022D5B;
+  --heading: #191D34;
   --text: #7f8c98;
   --aceent: #f98e93;
 }
@@ -140,7 +140,7 @@ body {
   color: var(--text);
 }
 .container {
-  max-width: 1270px;
+  max-width: 1370px;
   margin: 0 auto;
   padding: 0 32px;
   width: 100%;
@@ -156,6 +156,9 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.flex-5{
+  flex: 0 1 5%;
+}
 .flex-20{
   flex:0 1 20%;
 }
@@ -164,6 +167,10 @@ a {
 }
 .flex-40{
   flex:0 1 40%;
+}
+.flex-50{
+  flex:0 1 50%;
+
 }
 .flex-60{
   flex:0 1 60%;
@@ -184,7 +191,8 @@ a {
   padding: 12px 28px;
   border: 2px solid transparent;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 18px;
+
 }
 .social-media-icons {
   padding: 0 10px;
@@ -216,6 +224,9 @@ a {
 }
 .center{
   text-align: center;
+}
+.full_width{
+  width: 100%;
 }
 
 /* header style */
@@ -256,6 +267,12 @@ a {
 .nav-menu-list {
   position: absolute;
   right: 580px;
+}
+.navbar .btn{
+  margin-right: 14%;
+}
+.navbar .brand{
+  margin-left: 14%;
 }
 /*hero */
 .hero {
@@ -298,12 +315,16 @@ a {
     height:360px;
     display: inline-block;
 }
+
 .team2 h3{
     font-size: 40px;
     font-weight: 600;
     color: var(--primary);
     margin:28px 0;
 
+}
+#team2-p{
+  color: var(--heading);
 }
 .hr{
     width: 100px;
@@ -317,22 +338,21 @@ a {
 }
 .team3 img{
   width: 100%;
-  height:520px;
+  height: 540px;
 }
 .team3-content{
-  border: 2px solid   var(--secondary);
-  width: 32%;
-  height:34vh;
-  background: linear-gradient(to right , rgba(243,244,246,0.6));
+  width: 40%;
+  height:38vh;
+  background: linear-gradient(to right , rgba(250, 255, 255, 0.61), rgba(255, 255, 255, 0.966));
   text-align: justify;
   padding: 40px;
   position:absolute;
-  bottom: 160px;
-  right:120px;
+  bottom: 120px;
+  right:40px;
 }
 .team3-content h2{
-  font-size: 34px;
-  font-weight:bolder;
+  font-size: 44px;
+  font-weight:900;
   color: var(--primary);
 }
 .team3-content p{
@@ -344,9 +364,11 @@ a {
   background-color: var(--secondary);
   text-align: center;
 }
-.services h2{
-  font-size: 74px;
-  color: var(--primary);
+.heading{
+  font-size: 64px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--heading);
 }
 .services-content{
   font-size: 20px;
@@ -383,16 +405,22 @@ a {
   color: var(--heading);
   margin: 20px 0;
 }
-
+.c-intro{
+  margin-right:100px;
+}
 .cases img{
-  height: 400px;
-  margin: 1.5%;
+  height: 500px;
+  width: 320px;
+  margin-left: 20px;
 }
 .case-study{
   background: url(../media/hero/cases_hero.jpg) 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
   
+}
+.incomplete{
+  width: 1%;
 }
 .case-content h1{
   font-size: 38px;
@@ -453,12 +481,6 @@ a {
 .recent{
   background-color: var(--secondary);
 }
-.recent h2{
-  font-size: 74px;
-  color: var(--heading);
-  text-transform: capitalize;
-  font-weight: bolder;
-}
 .recent-content p,h3,time{
   margin-left: 28px;
 }
@@ -505,6 +527,7 @@ a {
 .submit{
   width: 20%;
   margin-right: 70px;
+  text-transform: capitalize;
 }
 /* footer styles */
 footer .container{
